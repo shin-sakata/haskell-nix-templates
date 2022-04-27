@@ -1,10 +1,10 @@
-# install
+# Install
 
 ```
 $ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates/master
 ```
 
-# usage
+# Usage
 
 ```
 $ nix flake new my-project -t haskell-nix-templates#cabal-ghc8107
