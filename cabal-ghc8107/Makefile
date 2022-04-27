@@ -1,6 +1,6 @@
 TEMPLATE_NAME=cabal-ghc8107-template
 
-new:
+update-template:
 	mkdir -p ${TEMPLATE_NAME}
 	nix develop . -c make cabal-new
 
