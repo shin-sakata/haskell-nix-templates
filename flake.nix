@@ -7,8 +7,8 @@
         path = ./cabal-ghc8107/dist;
         description = "Create a haskell-nix Hello World project using the latest cabal and ghc8107";
       };
-
-      defaultTemplate = self.templates.cabal-ghc8107;
     };
+
+    defaultTemplate = self.templates.cabal-ghc8107;
   };
 }
