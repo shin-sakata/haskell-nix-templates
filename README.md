@@ -1,18 +1,27 @@
 # Install
 
+```shell
+$ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates/27a99789c0392f011587fdc8edefcac74f14f9b3
 ```
-$ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates/master
+
+# Uninstall
+
+```shell
+$ nix registry remove haskell-nix-templates
+```
+
+# Quick start
+
+```
+$ nix flake new my-project -t haskell-nix-templates
 ```
 
 # Usage
 
+This example is for specifying the GHC version and package manager.
+
 ```
 $ nix flake new my-project -t haskell-nix-templates#{cabal or stack}-ghc{version}
-wrote: ./my-project/app/Main.hs
-wrote: ./my-project/app
-wrote: ./my-project/CHANGELOG.md
-wrote: ./my-project/flake.nix
-wrote: ./my-project/{cabal or stack}-ghc{version}-template.cabal
 ```
 
 # Current status of support
