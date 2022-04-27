@@ -12,3 +12,4 @@ cabal-new:
 fix-cabal:
 	cat ${TEMPLATE_NAME}/${TEMPLATE_NAME}.cabal | grep -v "author" | grep -v "maintainer" > tmp.cabal
 	cat tmp.cabal > ${TEMPLATE_NAME}/${TEMPLATE_NAME}.cabal
+	rm tmp.cabal
