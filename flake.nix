@@ -4,7 +4,7 @@
     templates = {
 
       cabal-ghc8107 = {
-        path = ./cabal-ghc8107/cabal-ghc8107-template;
+        path = ./cabal-ghc8107/dist;
         description = "Create a haskell-nix Hello World project using the latest cabal and ghc8107";
       };
 

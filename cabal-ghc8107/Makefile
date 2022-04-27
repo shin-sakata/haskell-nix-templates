@@ -1,15 +1,16 @@
-TEMPLATE_NAME=cabal-ghc8107-template
+PACKAGE_NAME=cabal-ghc8107-template
+DIST_DIR=./dist
 
-update-template:
-	mkdir -p ${TEMPLATE_NAME}
+build:
+	mkdir -p ${DIST_DIR}
 	nix develop . -c make cabal-new
 
 # for nix develop environment
 cabal-new:
-	cd ${TEMPLATE_NAME} && cabal init --overwrite
+	cd ${DIST_DIR} && cabal init --package-name=${PACKAGE_NAME} --overwrite
 	make fix-cabal
 
 fix-cabal:
-	cat ${TEMPLATE_NAME}/${TEMPLATE_NAME}.cabal | grep -v "author" | grep -v "maintainer" > tmp.cabal
-	cat tmp.cabal > ${TEMPLATE_NAME}/${TEMPLATE_NAME}.cabal
+	cat ${DIST_DIR}/${PACKAGE_NAME}.cabal | grep -v "author" | grep -v "maintainer" > tmp.cabal
+	cat tmp.cabal > ${DIST_DIR}/${PACKAGE_NAME}.cabal
 	rm tmp.cabal
