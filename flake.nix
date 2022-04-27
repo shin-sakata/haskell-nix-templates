@@ -1,0 +1,14 @@
+{
+  description = "A collection of flake haskell-nix templates";
+  outputs = { self }: {
+    templates = {
+
+      cabal-ghc8107 = {
+        path = ./cabal-ghc8107/cabal-ghc8107-template;
+        description = "Create a haskell-nix Hello World project using the latest cabal and ghc8107";
+      };
+
+      defaultTemplate = self.templates.cabal-ghc8107;
+    };
+  };
+}
