@@ -8,9 +8,11 @@ build:
 # for nix develop environment
 cabal-new:
 	cd ${DIST_DIR} && cabal init --package-name=${PACKAGE_NAME} --overwrite
-	make fix-cabal
+	make fix-project
 
-fix-cabal:
+fix-project:
 	cat ${DIST_DIR}/${PACKAGE_NAME}.cabal | grep -v "author" | grep -v "maintainer" > tmp.cabal
 	cat tmp.cabal > ${DIST_DIR}/${PACKAGE_NAME}.cabal
 	rm tmp.cabal
+	touch .envrc
+	echo "use flake" > .envrc
