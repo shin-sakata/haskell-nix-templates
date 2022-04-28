@@ -10,6 +10,11 @@
         description = "Create a haskell-nix Hello World project using the latest cabal and ghc8107";
       };
 
+      cabal-ghc902 = {
+        path = ./cabal-ghc8107/dist;
+        description = "Create a haskell-nix Hello World project using the latest cabal and ghc902";
+      };
+
     };
   };
 }
