@@ -1,7 +1,7 @@
 # Install
 
 ```shell
-$ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates/6a8370483892d854e0f2b9b1b0e58acd09a81431
+$ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates/bb71a8acda79fd9ca2b4ca4dd410128fb739ad6e
 ```
 
 # Uninstall
@@ -27,7 +27,7 @@ $ nix flake new my-project -t haskell-nix-templates#{cabal or stack}-ghc{version
 # Current status of support
 | Cabal or Stack \ GHC version | 8.10.7 | 9.0.2 |  9.2.2 |
 |---|---|---|---|
-| Cabal | ✅ | ✅ | 🙅‍♀️ |
+| Cabal | ✅ | ✅ | ✅ |
 | Stack | 🙅‍♀️ | 🙅‍♀️ | 🙅‍♀️ |
 
 # Future Plans
