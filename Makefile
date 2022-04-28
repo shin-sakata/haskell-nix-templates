@@ -17,3 +17,6 @@ fix-project:
 	cat tmp.cabal > ${DIST_DIR}/${PACKAGE_NAME}.cabal
 	rm tmp.cabal
 	echo "use flake" >  ${DIST_DIR}/.envrc
+
+doctor:
+	nix flake show .
