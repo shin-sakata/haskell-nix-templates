@@ -1,7 +1,7 @@
 # Install
 
 ```shell
-$ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates/bb71a8acda79fd9ca2b4ca4dd410128fb739ad6e
+$ nix registry add haskell-nix-templates github:shin-sakata/haskell-nix-templates
 ```
 
 # Uninstall
