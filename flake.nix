@@ -12,7 +12,7 @@
       templates = eachGhcVersions
         (ghcVersion: {
           "cabal-${ghcVersion}" = {
-            path = ./cabal/${ghcVersion}/dist;
+            path = ./cabal/${ghcVersion};
             description = "Create a haskell-nix Hello World project using the latest cabal and ${ghcVersion}";
           };
         }) // {
