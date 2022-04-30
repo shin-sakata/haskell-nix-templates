@@ -63,7 +63,7 @@ define HASKELL_NIX_FLAKE_CONTENTS
       in
       flake // {
         # Built by `nix build .`
-        defaultPackage = flake.packages."${PACKAGE_NAME}-template:exe:${PACKAGE_NAME}-template";
+        defaultPackage = flake.packages."${PACKAGE_NAME}:exe:${PACKAGE_NAME}";
       });
 }
 endef

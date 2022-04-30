@@ -38,6 +38,6 @@
       in
       flake // {
         # Built by `nix build .`
-        defaultPackage = flake.packages."cabal-ghc902-template:exe:cabal-ghc902-template";
+        defaultPackage = flake.packages."cabal-ghc902:exe:cabal-ghc902";
       });
 }
